@@ -1,0 +1,74 @@
+# =========================================================
+# .gitignore - TFG sonidos pulmonares
+# =========================================================
+
+# ==== AUDIO Y DATOS NO INCLUIDOS ====
+# Bases de datos originales (descarga desde fuentes públicas)
+*.wav
+*.WAV
+ICBHI_final_database/
+Respiratory_Sound_Database/
+Fraiwan_Dataset/
+
+# CSVs intermedios pesados
+features_enriquecidas.csv
+features_enriquecidas_corregido.csv
+features_fraiwan.csv
+features_fraiwan_limpio.csv
+
+# ==== PYTHON ====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# ==== JUPYTER ====
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ==== RESULTADOS GENERADOS ====
+resultados/*.csv
+resultados/*.png
+resultados/*.pdf
+!resultados/.gitkeep
+
+# ==== IDE Y EDITORES ====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ==== ARCHIVOS TEMPORALES ====
+*.log
+*.tmp
+*.bak
+
+# ==== SISTEMAS OPERATIVOS ====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
